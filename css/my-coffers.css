@@ -1,0 +1,40 @@
+
+/*//头部*/		 	
+header{position: fixed;top: 0;left: 0;right: 0;}
+/*底部*/
+footer a:hover{background: #CCCCCC;}
+
+/*已结算和当前佣金*/
+#money{display: flex;height: 60px;margin-top: 40px;}						
+/*已结算和当前佣金  里面的两个div*/
+#money div{flex: 1;height:35px;margin-top: 15px;}
+#money div:first-child{border-right: 1px solid #cccccc;}						
+/*已结算和当前佣金  里面的两个div 下面的两个span*/
+#money div span{height:17px;text-align: center;display: block;}
+#money div span:first-child{font-size: 14px;font-weight: bold;}
+#money div span:last-child{font-size: 11px;color: #cccccc;}
+
+/*已结算和当前佣金下面的一条背景*/
+#bg{background:#f1f5f6 ;height: 10px;display: flex;}	
+
+/*主要数据的导航栏*/					
+.nav{height: 40px;display: flex; border-top: 1px solid #cccccc;font-size: 16px;}
+.nav span{display: flex;flex: 1;justify-content: center;align-items: center;height:40px;}
+.nav span:not(:nth-child(4)){border-right: 1px solid #cccccc;}
+
+/*收入以及提成详情*/
+#content{margin-bottom: 50px;}
+#content li{display: flex;height: 39px;border-top: 1px solid #CCCCCC; font-size: 16px;}
+#content li span{display: flex;flex: 1;justify-content: center;align-items: center;}
+#content li span:hover{background: #CCCCCC;}
+
+/*媒体查询*/
+@media screen and (min-width:600px){
+			/*h1{font-size:18px;color:#00f;}*/
+			#money div span:first-child{font-size: 20px;font-weight: bold;}
+			#money div span:last-child{font-size: 20px;color: #cccccc;}
+			/*收入以及提成详情*/
+			#content li{display: flex;height: 45px;border-top: 1px solid #CCCCCC;font-size: 21px;}
+		
+			.nav{height: 45px;display: flex; border-top: 1px solid #cccccc;font-size: 21px;}
+}

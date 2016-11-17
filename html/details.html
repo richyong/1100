@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1"/>
+		<title>详情页面</title>
+		<link rel="stylesheet" type="text/css" href="../css/index.css"/>
+		<link rel="stylesheet" href="../css/img/font/iconfont.css"/>
+		<link rel="stylesheet" href="../css/common.css"/>
+		<link rel="stylesheet" href="../css/details.css"/>
+		<link rel="stylesheet" href="../accets/bootstrap.css"/>
+		<link rel="stylesheet" href="../accets/swiper.min.css"/>
+		<script src="../accets/swiper.min.js" charset="utf-8"></script>
+		<script src="../accets/jquery.min.js" charset="utf-8"></script>
+		<script src="../accets/bootstrap.js"></script>
+		<script src="../accets/zepto/dist/zepto.min.js"></script>
+		<script src="../accets/zepto/src/touch.js" charset="utf-8"></script>
+		<script src="../js/details.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--头部 -----start-->
+		<header>
+			<div class="top">
+				<a href="javascript:history.go(-1)"><i class="iconfont icon-xiangzuo"></i></a>
+				<div><span class="active">详情</span><span>评论</span></div>
+				<a href="#" class="classify"><i class="iconfont icon-fenlei"></i></a>
+			</div>
+			<!--分类-->
+			<div class="navmorelist">
+				<ul>
+					<li><a href="../index.html">首页</a></li>
+					<li><a href="my-coffers.html">积分区</a></li>
+					<li><a href="">夺宝区</a></li>
+					<li><a href="list.html">分类</a></li>
+					<li><a href="shopping.html">购物车</a></li>
+					<li><a href="personal.html">个人中心</a></li>
+				</ul>
+			</div>
+		</header>
+		<!--头部 -----end-->
+		<!--主体 ----start-->
+		<div class="main swiper-container">
+			<div class="swiper-wrapper">
+				<!--详情 ----start-->
+				<div class="detail swiper-slide">
+					<!--轮播图 -----start-->
+					<div id="carousel" class="swiper-container">
+						<div class="swiper-wrapper">
+						    <div class="swiper-slide"><a href=""><img src="../img/lb1.jpg"/></a></div>
+						    <div class="swiper-slide"><a href=""><img src="../img/lb2.jpg"/></a></div>
+						    <div class="swiper-slide"><a href=""><img src="../img/lb3.jpg"/></a></div>
+						    <div class="swiper-slide"><a href=""><img src="../img/lb4.jpg"/></a></div>
+					    </div>
+					    <!--<div class="pagination"></div> -->
+					</div>
+					<!--轮播图 -----end-->
+					<div class="item-title">
+						<!--<span>东革阿里 马亚西亚原始森林 5A级原片</span>
+						<span>￥556</span>-->
+					</div>
+					<div class="good-detail">
+						<img src="../img/xq21.jpg"/>
+						<img src="../img/xq22.jpg"/>
+						<img src="../img/xq23.jpg"/>
+						<img src="../img/xq24.jpg"/>
+						<img src="../img/xq25.jpg"/>
+						<img src="../img/xq26.jpg"/>
+						<img src="../img/xq27.jpg"/>
+						<img src="../img/xq28.jpg"/>
+						<img src="../img/xq29.jpg"/>
+						<img src="../img/xq30.jpg"/>
+						<img src="../img/xq31.jpg"/>
+						<img src="../img/xq32.jpg"/>
+						<img src="../img/xq33.jpg"/>
+						<img src="../img/xq34.jpg"/>
+						<img src="../img/xq35.jpg"/>
+					</div>
+				</div>
+				<!--详情 ----end-->
+				<!--评论 ----start-->
+				<div class="review swiper-slide">
+					
+				</div>
+				<!--评论 ----end-->
+			</div>
+		</div>
+		<!--主体 ----end-->
+		<!--底部 -----start-->
+		<footer>
+			<div class="bootm">
+				<div class="cart col-xs-3">
+					<a href="shopping.html">
+						<div class="buy-car">
+							<i class="fa iconfont icon-gouwuche"></i>
+							<span class="item-count">0</span>
+						</div>
+					</a>
+				</div>
+				<div class="joinCart col-xs-4">
+					<a href="shopping.html">加入购物车</a>
+				</div>
+				<div class="buy col-xs-5">
+					<a href="indent.html">立即购买</a>
+				</div>
+			</div>
+		</footer>
+		<!--头部 -----end-->
+		<script>
+			document.addEventListener('DOMContentLoaded',function () {
+				var mySwiper = new Swiper('#carousel',{
+					autoplay:2000,
+					loop:true,
+					autoplayDisableOnInteraction : false,
+					pagination : '.pagination',
+					speed:300,
+				});
+				
+				var mySwiper1 = new Swiper('.main',{
+					
+				});
+				var $active = $(".top div span");
+				
+				$active.first().on("singleTap",function () {
+					$(this).siblings().removeClass('active');
+					$(this).addClass('active');
+					mySwiper1.slideTo(0, 1000, false);
+				});
+				$active.last().on("singleTap",function () {
+					$(this).siblings().removeClass('active');
+					$(this).addClass('active');
+					mySwiper1.slideTo(1, 1000, false);
+				});
+			});
+		</script>
+	</body>
+</html>
