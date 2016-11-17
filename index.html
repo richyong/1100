@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1"/>
+		<title></title>
+		<link rel="stylesheet" href="accets/bootstrap.min.css"/>
+		<link rel="stylesheet" href="css/common.css"/>
+		<link rel="stylesheet" href="css/img/font/iconfont.css"/>
+		<link rel="stylesheet" href="accets/swiper.min.css"/>
+		<link rel="stylesheet" href="css/index.css"/>
+		<script src="accets/jquery.min.js" charset="utf-8"></script>
+		<script src="accets/bootstrap.min.js"></script>
+		<script src="accets/swiper.min.js" charset="utf-8"></script>
+		<script src="js/index.js" charset="utf-8"></script>
+		<script src="accets/zepto/dist/zepto.min.js" charset="utf-8"></script>
+		<script src="accets/zepto/src/touch.js" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--头部 -----start-->
+		<header>
+			<div class="top">
+				<a href=""></a>
+				<div><img src="img/logo.PNG" style="height: 25px;margin-top: -3px;"/></div>
+				<a href=""><i class="iconfont icon-sousuo"></i></a>
+			</div>
+		</header>
+		<!--头部 -----end-->
+		<!--主体部分 -----start-->
+		<div class="main">
+			<!--轮播图 -----start-->
+			<div id="carousel" class="swiper-container">
+				<div class="swiper-wrapper">
+				    <div class="swiper-slide"><a href=""><img src="img/1.jpg"/></a></div>
+				    <div class="swiper-slide"><a href=""><img src="img/2.jpg"/></a></div>
+				    <div class="swiper-slide"><a href=""><img src="img/3.jpg"/></a></div>
+			    </div>
+			    <div class="pagination"></div> 
+			</div>
+			<!--轮播图 -----end-->
+			<!--分类 -----start-->
+			<nav class="category">
+				<a href="html/list.html">
+					<div class="col-xs-3 item">
+						<img src="img/01.PNG"/>
+						<span class="text-center">保健</span>
+					</div>
+				</a>
+				<a href="html/list.html">
+					<div class="col-xs-3 item">
+						<img src="img/02.PNG"/>
+						<span class="text-center">服饰</span>
+					</div>
+				</a>
+				<a href="html/list.html">
+					<div class="col-xs-3 item">
+						<img src="img/03.PNG"/>
+						<span class="text-center">家居</span>
+					</div>
+				</a>
+				<a href="html/list.html">
+					<div class="col-xs-3 item">
+						<img src="img/04.PNG"/>
+						<span class="text-center">母婴</span>
+					</div>
+				</a>
+				<a href="html/list.html">
+					<div class="col-xs-3 item">
+						<img src="img/05.PNG"/>
+						<span class="text-center">美妆</span>
+					</div>
+				</a>
+				<a href="html/list.html">
+					<div class="col-xs-3 item">
+						<img src="img/06.PNG"/>
+						<span class="text-center">饰品</span>
+					</div>
+				</a>
+				<a href="html/list.html">
+					<div class="col-xs-3 item">
+						<img src="img/07.PNG"/>
+						<span class="text-center">数码</span>
+					</div>
+				</a>
+				<a href="html/list.html">
+					<div class="col-xs-3 item">
+						<img src="img/08.PNG"/>
+						<span class="text-center">食品</span>
+					</div>
+				</a>
+			</nav>
+			<!--分类 -----end-->
+			<!--精品、vip -----start-->
+			<nav class="category1">
+				<a href="">
+					<div class="col-xs-6 item">
+						<img src="img/pp.jpg"/>
+					</div>
+				</a>
+				<a href="">
+					<div class="col-xs-6 item">
+						<img src="img/vip.jpg"/>
+					</div>
+				</a>
+			</nav>
+			<!--精品、VIP -----end-->
+			<!--产品列表 -----start-->
+			<div class="productlist">
+				<!--<div>
+					<div class="proimg">
+						<a href="">
+							<img src="img/yiyuan.jpg"/>
+						</a>
+					</div>
+					<div class="item-title"></div>
+				</div>-->
+			</div>
+			<!--产品列表 -----end-->
+			<div class="backTop">TOP</div>
+		</div>
+		<!--主体部分 -----end-->
+		<!--底部 -----start-->
+		<footer>
+			<nav>
+				<a href="index.html" class="nav-btn highlight"><i class="iconfont icon-zhuye"></i><span>首页</span></a>
+				<a href="html/my-coffers.html" class="nav-btn"><i class="iconfont icon-jifen"></i><span>积分区</span></a>
+				<a href="html/list.html" class="nav-btn"><i class="iconfont icon-mofang"></i><span>一元购</span></a>
+				<a href="html/shopping.html" class="nav-btn"><i class="iconfont icon-gouwuche"></i><span>购物车</span></a>
+				<a href="html/personal.html" class="nav-btn"><i class="iconfont icon-icon3"></i><span>个人中心</span></a>
+			</nav>
+		</footer>
+		<!--底部 -----end-->
+		<script>
+			document.addEventListener('DOMContentLoaded',function () {
+				var mySwiper = new Swiper('.swiper-container',{
+					autoplay:2000,
+					loop:true,
+					autoplayDisableOnInteraction : false,
+					pagination : '.pagination',
+					speed:300,
+				});
+			});
+		</script>
+	</body>
+</html>

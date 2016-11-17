@@ -1,0 +1,7 @@
+json文件名称：
+	comment评论页
+	home_page主页1
+	list列表页
+	picture主页2
+	shopping购物车
+	coffers金库页

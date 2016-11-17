@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>我的订单</title>
+<style>
+	
+</style>
+<!--引入公共字体图标-->
+<link rel="stylesheet" href="../css/img/font/iconfont.css" />
+<!--引入页面样式-->
+<link rel="stylesheet" href="../css/indent.css" />
+<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+<!--引入插件-->
+<script src="../accets/jquery.js"></script>
+<script src="../accets/zepto/dist/zepto.min.js"></script>
+<script src="../accets/zepto/src/touch.js"></script>
+<!--引入页面js-->
+<script src="../js/indent.js" ></script>
+<script>
+		
+</script>
+</head>
+<body>
+	<!--头部-start-->
+	<header id="header">
+		<div class="top">
+			<a href="javascript:history.go(-1)"><i class="iconfont icon-xiangzuo"></i></a>
+			<div>我的订单</div>
+			<a href="#" class="classify"><i class="iconfont icon-fenlei"></i></a>
+		</div>
+		<!--分类-->
+		<div class="navmorelist">
+			<ul>
+				<li><a href="../index.html">首页</a></li>
+				<li><a href="my-coffers.html">积分区</a></li>
+				<li><a href="">夺宝区</a></li>
+				<li><a href="list.html">分类</a></li>
+				<li><a href="shopping.html">购物车</a></li>
+				<li><a href="personal.html">个人中心</a></li>
+			</ul>
+		</div>
+	</header>
+	<!--头部-end-->
+	
+	<!--订单菜单项-->
+	<nav id="menu">
+		<a class="active" href="#">全部</a>
+		<a href="#">待付款</a>
+		<a href="#">待发货</a>
+		<a href="#">待收货</a>
+		<a href="#">待评价</a>
+	</nav>
+	
+	<!--订单列表项-->
+	<div id="orders">
+		<!--页面初始化订单-->
+		<div class="goods g-curr">
+			<!--订单头部-->
+			<div class="top">
+				<span class="s-dp">店铺1</span>
+				<span class="s-gt">交易成功</span>
+			</div>
+			<!--商品信息-->
+			<ul class="g-list">
+				<li>
+					<img class="g-img" src="../img/56.jpg" />
+					<div class="base">
+						<span class="s-tle">斯文印花黑灰色短袖连衣裙</span>
+						<span class="s-rmb">￥<span class="e-jg">120</span></span>
+						<span class="s-nub">X<span class="e-sl">2</span></span>
+					</div>
+				</li>
+			</ul>
+			<!--商品合计-->
+			<div class="total">
+				共<span class="s-sl">2</span>件商品,合计:￥<b class="b-rmb">120</b>
+			</div>
+			<!--按钮列表-->
+			<div class="btn-menu">
+				<button>查看物流</button>
+				<button class="btnDel">删除订单</button>
+				<button>付款</button>
+			</div>
+		</div>
+		<!--订单项-->
+		<div class="goods">
+			<!--订单头部-->
+			<div class="top">
+				<span class="s-dp">店铺1</span>
+				<span class="s-gt">交易成功</span>
+			</div>
+			<!--商品信息-->
+			<ul class="g-list">
+				<li>
+					<img class="g-img" src="../img/56.jpg" />
+					<div class="base">
+						<span class="s-tle">斯文印花黑灰色短袖连衣裙</span>
+						<span class="s-rmb">￥<span class="e-jg">120</span></span>
+						<span class="s-nub">X<span class="e-sl">2</span></span>
+					</div>
+				</li>
+			</ul>
+			<!--商品合计-->
+			<div class="total">
+				共<span class="s-sl">2</span>件商品,合计:￥<b class="b-rmb">120</b>
+			</div>
+			<!--按钮列表-->
+			<div class="btn-menu">
+				<button>查看物流</button>
+				<button class="btnDel">删除订单</button>
+				<button>付款</button>
+			</div>
+		</div>	
+		
+	
+	</div>
+	<!--订单列表项-end-->
+	
+	
+	<!--页脚 -start-->
+		<footer>
+			<nav>
+				<a href="../index.html" class="nav-btn"><i class="iconfont icon-zhuye"></i><span>首页</span></a>
+				<a href="my-coffers.html" class="nav-btn"><i class="iconfont icon-jifen"></i><span>积分区</span></a>
+				<a href="details.html" class="nav-btn"><i class="iconfont icon-mofang"></i><span>一元购</span></a>
+				<a href="shopping.html" class="nav-btn"><i class="iconfont icon-gouwuche1"></i><span>购物车</span></a>
+				<a href="personal.html" class="nav-btn"><i class="iconfont icon-icon3"></i><span>个人中心</span></a>
+			</nav>
+		</footer>
+	<!--页脚 -end-->
+</body>
+</html>

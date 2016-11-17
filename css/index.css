@@ -1,0 +1,56 @@
+@charset "UTF-8";
+body { font-family: 'Microsoft YaHei',"Comic Sans MS","幼圆","黑体",sans-serif; background-color: #f1f5f6; color: #000; }
+
+li { list-style: none; }
+
+img { vertical-align: middle; }
+
+a { color: #000; }
+
+a:hover { text-decoration: none; }
+
+a:active { text-decoration: none; }
+
+a:visited { text-decoration: none; }
+
+a:link { text-decoration: none; }
+
+* { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin: 0; padding: 0; }
+
+.main { position: absolute; margin-top: 48px; margin-bottom: 54px; z-index: 1; left: 0; right: 0; width: 100%; }
+
+#carousel { width: 100%; overflow: hidden; }
+
+#carousel .swiper-slide { position: relative; text-align: center; }
+
+#carousel img { width: 100%; height: 237px; }
+
+.pagination { position: absolute; z-index: 20; bottom: 10px; text-align: center; right: 0; }
+
+.category { overflow: hidden; border-top: 1px solid #ececec; border-bottom: 1px solid #ccc; margin-bottom: 5px; width: 100%; height: auto; background: #F7F7F7; padding: 8px 0; color: #000; }
+
+.category .item { padding: 8px 0; text-align: center; }
+
+.category .item img { width: 35px; height: 35px; }
+
+.category1 { overflow: hidden; width: 100%; margin: 5px 0; }
+
+.category1 .item { padding: 0 3px 0 6px; }
+
+.category1 img { width: 100%; }
+
+.productlist > div { padding-bottom: 5px; margin: 5px; margin-bottom: 10px; border-bottom: 1px dotted #ccc; background-color: #fff; }
+
+.productlist > div > div { color: #616b7f; padding-bottom: 5px; white-space: nowrap; text-overflow: ellipsis; width: 100%; overflow: hidden; }
+
+.productlist > div .proimg { width: 100%; }
+
+.productlist > div .proimg img { width: 100%; }
+
+.productlist > div .item-title { font-size: 14px; }
+
+.productlist > div .item-title span { color: #000000; font-size: 16px; font-family: 微软雅黑; }
+
+.productlist > div .item-title span:last-child { color: #8E488E; }
+
+.backTop { display: none; width: 40px; height: 40px; background: #FF0000; color: #DDDDDD; font-size: 14px; line-height: 40px; text-align: center; opacity: 0.5; border-radius: 50%; position: fixed; right: 20px; bottom: 70px; }

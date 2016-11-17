@@ -1,0 +1,87 @@
+
+body{margin: 0;padding: 0;font-family: "微软雅黑";}
+ul{list-style: none;margin: 0; padding: 0;}
+
+
+/*头部*/
+.head{width: 100%; background: #8E488E; height: 48px;display: flex;border-bottom:1px solid #CCCCCC ;position: relative;}
+.head span{flex: 1; line-height: 48px;}
+.head span:nth-child(1){padding-left: 16px;color:oldlace;font-size: 20px;}
+.head span:nth-child(2){font-size: 16px; color: oldlace;text-align: center;}
+.head span:nth-child(3){text-align: right;color:oldlace; padding-right: 16px;}
+.head a{color: #FFFFFF;}
+
+
+
+
+
+
+/*购物车商品列表*/
+.list{width: 100%;background: #FFFFFF;margin-top: 48px;}
+.list_Ul .list_Li{border-bottom: 1px solid #cccccc;width: 100%;  height: 104px;}
+.list_Ul .list_Li .list_box{display: flex;height: 84px;width: 100%;position: relative;}
+    /*勾选*/
+.list_Ul .list_Li .list_box1{width: 8%;line-height: 84px;margin-left: 10px;}
+    /*中间商品信息*/
+.list_Ul .list_Li .list_box2{width:65% ;position: relative;margin: 10px 0;}
+.myImg{
+    display: inline-block;
+    width: 53px; 
+    height: 85px;
+    /*background: url(../img/54.jpg)no-repeat center/cover;*/
+    margin-right: 10px;
+}
+.list_Ul .list_Li .list_box2 span:nth-child(2){position: absolute;top: 0;}
+.list_Ul .list_Li .list_box2 span:nth-child(3){position: absolute;bottom: -20px; color: red;}
+    /*商品加减与删除*/
+.list_Ul .list_Li .list_box3{width: 25%;position: absolute; right: 0;bottom: -10px;display: flex;margin-right: 8px;}
+.list_Ul .list_Li .list_box3 span:nth-child(1){
+    display: inline-block;
+    width: 26px;
+    height: 23;
+    border-radius: 5px; 
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border: 1px solid #cccccc;
+    border-right: none;
+    color: #cccccc;
+    text-align: center;
+    line-height: 23px;
+    }
+.list_Ul .list_Li .list_box3 span:nth-child(2){
+    display: inline-block;
+    width: 26px;
+    height: 23;
+    border: 1px solid #cccccc;
+    color: #000000;
+    text-align: center;
+    line-height: 23px;
+    }
+.list_Ul .list_Li .list_box3 span:nth-child(3){
+    display: inline-block;
+    width: 26px;
+    height: 23;
+    border-radius: 5px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border: 1px solid #cccccc;
+    border-left: none;
+    color: #cccccc;
+    text-align: center;
+    line-height: 23px;
+    }
+
+.shan_chu{position: absolute;bottom: 0;right: 0;}   
+
+/*底部*/
+.foot{position: fixed;bottom: 0;display:flex;width: 100%; }
+.foot span{height: 46px;display: inline-block;font-size: 12px;color: #ffffff;text-align: center; line-height: 46px;}
+.foot span:nth-child(1){width: 25%;background: #f1f5f6;color: #000000;}
+.foot span:nth-child(2){width: 33%;background: #dd3d97;}
+.xiang_right{color: #FFFFFF;}
+#affirm{width: 42%;background: #8e488e;text-align: center;line-height: 46px;color: #FFFFFF;}
+
+/*图标改动*/
+.icon-xiangyoujiantou{color: oldlace;}
+.total_prices{color: oldlace;font-weight:500 ;}
+

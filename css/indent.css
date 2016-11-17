@@ -1,0 +1,59 @@
+@charset "UTF-8";
+* { margin: 0; padding: 0; }
+
+html, body { width: 100%; height: 100%; }
+
+body { font-size: 13px; font-family: 'microsoft yahei',"comic sans ms",'幼圆','黑体',sans-serif; color: #000; background: #f1f5f6; }
+
+ul { list-style: none; }
+
+a { text-decoration: none; }
+
+/*--订单菜单项-start-*/
+#menu { box-sizing: border-box; width: 100%; height: 48px; background-color: #f7f7f7; padding: 10px 0; display: flex; border-bottom: 1px solid #d7d7d7; box-sizing: border-box; margin-top: 48px; }
+
+#menu a { flex: 1 1 100%; color: #3e3e3e; font-size: 12px; text-align: center; line-height: 28px; border-right: 1px dotted #d7d7d7; }
+
+#menu a:last-child { border: none; }
+
+#menu a.active { color: #e80080; }
+
+/*--订单菜单项-end-*/
+/*--订单信息-start--*/
+#orders { width: 100%; height: auto; }
+
+/*-页面初始化订单-*/
+#orders div.g-curr { display: none; }
+
+/*-每个订单-*/
+#orders .goods { width: 100%; height: auto; background: #fff; margin-bottom: 15px; color: #3e3e3e; box-sizing: border-box; }
+
+/*--订单头部--*/
+#orders .goods div.top { box-sizing: border-box; width: 100%; height: 37px; padding: 0 10px; line-height: 37px; border-bottom: 1px solid #d7d7d7; }
+
+#orders .goods div.top span.s-gt { float: right; color: #f377bb; }
+
+/*-商品列表-*/
+#orders ul.g-list { width: 100%; height: auto; }
+
+#orders ul.g-list li { box-sizing: border-box; width: 100%; height: 95px; padding-left: 10px; border-bottom: 1px solid #d7d7d7; }
+
+/*-商品图片-*/
+#orders ul.g-list img.g-img { display: block; width: 17%; height: 90%; float: left; margin-top: 5px; }
+
+/*-商品信息-*/
+#orders ul.g-list div.base { float: right; width: 83%; height: 100%; box-sizing: border-box; padding: 13px 10px; position: relative; }
+
+/*-商品单价-*/
+#orders ul.g-list div.base span.s-rmb { position: absolute; left: 10px; bottom: 15px; color: #f377bb; }
+
+/*-商品数量-*/
+#orders ul.g-list div.base span.s-nub { position: absolute; right: 10px; bottom: 15px; }
+
+/*--商品合计--*/
+#orders .goods div.total { width: 100%; height: 38px; box-sizing: border-box; padding-right: 10px; text-align: right; line-height: 37px; border-bottom: 1px solid #d7d7d7; }
+
+/*--商品按钮列表--*/
+#orders .goods div.btn-menu { width: 100%; height: 48px; }
+
+#orders .goods div.btn-menu button { display: inline-block; border: none; float: right; background: #fff; box-sizing: border-box; border: 1px solid #d7d7d7; border-radius: 5px; padding: 7px 10px; margin: 10px 10px 0 0; }
